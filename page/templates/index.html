@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+ {% comment %} {% if messages %}
+    {{ message.tags }}
+    <div class="alert alert-info" role="alert">
+        {% for message in messages %}
+           {{ message }}
+        {% endfor %}
+      </div>
+    {% endif %} {% endcomment %}
+
+    <h1 class = "mx-auto mt-5 mb-5", style = "text-align: center;" >Welcome {{user.first_name}} to Home Page | Successfully logged in</h1> 
+
+
+    {% endblock %}
